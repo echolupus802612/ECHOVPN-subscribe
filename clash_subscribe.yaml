@@ -1,0 +1,48 @@
+proxies:
+  - name: "JP-Free"
+    type: vless
+    server: 45.77.183.50
+    port: 443
+    uuid: 3f5be8e3-0a0e-41b4-b9c1-232640b32f0e
+    network: tcp
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8
+      short-id: e3b8d6f2
+    fingerprint: chrome
+
+  - name: "JP-VIP"
+    type: vless
+    server: 45.77.183.50
+    port: 8443
+    uuid: 21c33a80-e1d3-4a15-899b-bf74c90c2960
+    network: tcp
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: www.cloudflare.com
+    reality-opts:
+      public-key: Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8
+      short-id: e3b8d6f2
+    fingerprint: chrome
+
+proxy-groups:
+  - name: "Auto"
+    type: url-test
+    proxies:
+      - JP-Free
+      - JP-VIP
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+
+  - name: "Manual"
+    type: select
+    proxies:
+      - JP-Free
+      - JP-VIP
+
+rules:
+  - MATCH,Auto
