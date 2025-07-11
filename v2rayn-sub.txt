@@ -1,2 +1,2 @@
-vless://3f5be8e3-0a0e-41b4-b9c1-232640b32f0e@45.77.183.50:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8&sid=e3b8d6f2&type=tcp#JP-Free
-vless://21c33a80-e1d3-4a15-899b-bf74c90c2960@45.77.183.50:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8&sid=e3b8d6f2&type=tcp#JP-VIP
+vless://3f5be8e3-0a0e-41b4-b9c1-232640b32f0e@45.77.183.50:443?encryption=none&flow=none&security=reality&sni=www.l.google.com&fp=chrome&pbk=Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8&sid=e3b8d6f2&type=tcp#JP-Free
+vless://21c33a80-e1d3-4a15-899b-bf74c90c2960@45.77.183.50:8443?encryption=none&flow=none&security=reality&sni=www.l.google.com&fp=chrome&pbk=Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8&sid=e3b8d6f2&type=tcp#JP-VIP
