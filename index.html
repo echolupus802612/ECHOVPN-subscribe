@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VPN 訂閱掃碼頁</title>
+  <title>EchoVPN 掃碼訂閱頁</title>
 </head>
 <body style="font-family:sans-serif;text-align:center;padding:2rem">
+
   <h2>📡 EchoVPN 訂閱入口</h2>
-  <p>請使用支援 Reality 的 App 掃描 QR Code 或貼上訂閱連結</p>
+  <p>請根據你使用的 App 掃描下方對應 QR Code</p>
 
-  <!-- 這裡的 QR Code 用 GitHub Pages 原始網址避免跳轉 -->
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://echolupsu.github.io/ECHOVPN-subscribe/sub.json" alt="QR Code" />
+  <h3>🔸 Android / Windows 用戶（v2rayN / SagerNet）</h3>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://sub.echolupus.com/sub.json" alt="QR for sub.json" />
+  <p><code>https://sub.echolupus.com/sub.json</code></p>
 
-  <p><b>訂閱連結：</b><br>
-    <code>https://echolupsu.github.io/ECHOVPN-subscribe/sub.json</code></p>
+  <h3>🔹 iOS 用戶（Shadowrocket / Stash）</h3>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://sub.echolupus.com/vless-sub.txt" alt="QR for vless-sub.txt" />
+  <p><code>https://sub.echolupus.com/vless-sub.txt</code></p>
 
   <p style="color:gray;font-size:0.9rem">
-    此連結支援 Shadowrocket、v2rayN、SagerNet。<br>
-    若跳轉失敗請手動複製網址。
+    若掃碼無效，可手動複製訂閱連結貼入 App。<br>
+    Powered by GitHub Pages + Cloudflare
   </p>
 
-  <p style="color:gray;font-size:0.9rem">Powered by GitHub Pages</p>
 </body>
 </html>
