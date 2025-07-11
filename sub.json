@@ -12,7 +12,7 @@
       "server_name": "www.cloudflare.com",
       "reality": {
         "enabled": true,
-        "public_key": "SBImiN8rWjlf52zbieK9hhXvc7DHIol7LSpCko57MDI",
+        "public_key": "Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8",
         "short_id": "e3b8d6f2"
       }
     }
@@ -30,7 +30,7 @@
       "server_name": "www.cloudflare.com",
       "reality": {
         "enabled": true,
-        "public_key": "SBImiN8rWjlf52zbieK9hhXvc7DHIol7LSpCko57MDI",
+        "public_key": "Mu-72Z07RCKYq5Rik1EqTsuF2BLD67jHyKlmkg3XEx8",
         "short_id": "e3b8d6f2"
       }
     }
