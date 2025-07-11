@@ -1,2 +1,2 @@
-vless://3f5be8e3-0a0e-41b4-b9c1-232640b32f0e@45.77.183.50:443?encryption=none&flow=none&security=reality&sni=cdn.jsdelivr.net&fp=chrome&pbk=09IdhTi2TqnhSKaULiEq3a8CCIzIzPBZSuFbeZN7HXQ&sid=4d3a5b1c&type=tcp#JP-Free
-vless://21c33a80-e1d3-4a15-899b-bf74c90c2960@45.77.183.50:8443?encryption=none&flow=none&security=reality&sni=cdn.jsdelivr.net&fp=chrome&pbk=09IdhTi2TqnhSKaULiEq3a8CCIzIzPBZSuFbeZN7HXQ&sid=4d3a5b1c&type=tcp#JP-VIP
+vless://3f5be8e3-0a0e-41b4-b9c1-232640b32f0e@echolupus.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=echolupus.com&type=tcp#JP-Free
+vless://21c33a80-e1d3-4a15-899b-bf74c90c2960@echolupus.com:8443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=echolupus.com&type=tcp#JP-VIP
