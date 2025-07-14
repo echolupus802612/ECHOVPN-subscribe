@@ -1,2 +1,73 @@
-vless://3f5be8e3-0a0e-41b4-b9c1-232640b32f0e@45.77.183.50:443?encryption=none&flow=&type=tcp&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=GydTRZotQhYKnJlD0ah5fqqsm7JQwxyZJOOS9D54mh8&sid=9a4c7e2f#JP-Free-Reality
-vless://21c33a80-e1d3-4a15-899b-bf74c90c2960@45.77.183.50:8443?encryption=none&flow=&type=tcp&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=GydTRZotQhYKnJlD0ah5fqqsm7JQwxyZJOOS9D54mh8&sid=9a4c7e2f#JP-VIP-Reality
+{
+  "log": {
+    "level": "info"
+  },
+  "inbounds": [
+    {
+      "type": "vless",
+      "tag": "JP-Free",
+      "listen": "::",
+      "listen_port": 443,
+      "users": [
+        {
+          "uuid": "3f5be8e3-0a0e-41b4-b9c1-232640b32f0e"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "reality": {
+          "enabled": true,
+          "handshake": {
+            "server": "www.cloudflare.com",
+            "server_port": 443
+          },
+          "private_key": "4KJSHyQBwVpePZDBFYHwjf5qJmkhtd4CZWK6tpEWr0Q",
+          "short_id": ["9a4c7e2f"]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "JP-VIP",
+      "listen": "::",
+      "listen_port": 8443,
+      "users": [
+        {
+          "uuid": "21c33a80-e1d3-4a15-899b-bf74c90c2960"
+        }
+      ],
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "reality": {
+          "enabled": true,
+          "handshake": {
+            "server": "www.cloudflare.com",
+            "server_port": 443
+          },
+          "private_key": "4KJSHyQBwVpePZDBFYHwjf5qJmkhtd4CZWK6tpEWr0Q",
+          "short_id": ["9a4c7e2f"]
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": ["JP-Free", "JP-VIP"],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
